@@ -32,11 +32,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIBarButtonItem *reloadButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reloadData)];
+    reloadButton.style = UIBarButtonItemStylePlain;
     
-    self.navigationItem.rightBarButtonItems = @[
-                                                [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reloadData)]
-                                                ];
-
+    self.navigationItem.rightBarButtonItems = @[reloadButton];
     
     [self reloadData];
 }
