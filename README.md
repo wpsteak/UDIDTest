@@ -3,19 +3,19 @@ UDIDTest
 
 ASIdentifierManager
 
-```Objective-C
-	NSString *advertisingIdentifier = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];    
+``` objc
+NSString *advertisingIdentifier = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];    
 ```
  
 identifierForVendor
 
-```Objective-C
+``` objc
     NSString *identifierForVendor = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 ```    
 
 identifier hashed from MAC Address
 
-```Objective-C
+``` objc
     NSString *uniqueGlobalDeviceIdentifier = [[UIDevice currentDevice] uniqueGlobalDeviceIdentifier];
 ```
     
