@@ -1,7 +1,7 @@
 UDIDTest
 ========
 
-###compare ASIdentifierManager identifierForVendor for iOS 6+
+###compare ASIdentifierManager, identifierForVendor and identifier hashed form MAC address for iOS 6+
 
 ### why I create this project?
 
