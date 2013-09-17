@@ -13,7 +13,7 @@ Because MAC address will return the same value to all devices in iOS7,
 so I create this project to compare ASIdentifierManager , identifierForVendor and identifier hashed from MAC Address these three method's beheaver in iOS6+.
 
 
-#####Notice:
+####Notice:
 ASIdentifierManager and identifierForVendor may return “00000000-0000-0000-0000-000000000000” in iOS6, seems to be fixed in 6.0.1
 
 [ref1](http://stackoverflow.com/questions/12605257/the-advertisingidentifier-and-identifierforvendor-return-00000000-0000-0000-000)
