@@ -16,6 +16,10 @@ so I create this project to compare ASIdentifierManager , identifierForVendor an
 #####Notice:
 ASIdentifierManager and identifierForVendor may return “00000000-0000-0000-0000-000000000000” in iOS6, seems to be fixed in 6.0.1
 
+[ref1](http://stackoverflow.com/questions/12605257/the-advertisingidentifier-and-identifierforvendor-return-00000000-0000-0000-000)
+[ref2](http://stackoverflow.com/questions/12506893/identifierforvendor-and-ios6?answertab=active#tab-top)
+
+
 ###ASIdentifierManager
 
 ``` objc
@@ -23,9 +27,6 @@ NSString *advertisingIdentifier = [[[ASIdentifierManager sharedManager] advertis
 ```
  
 ###identifierForVendor
-
-[ref1](http://stackoverflow.com/questions/12605257/the-advertisingidentifier-and-identifierforvendor-return-00000000-0000-0000-000)
-[ref2](http://stackoverflow.com/questions/12506893/identifierforvendor-and-ios6?answertab=active#tab-top)
 
 ``` objc
     NSString *identifierForVendor = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
